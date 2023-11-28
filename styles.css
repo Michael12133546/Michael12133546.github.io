@@ -1,28 +1,41 @@
 body{
     background-color: darkred;
-    font-family: Arial, Helvatica, Arial, Helvetica, sans-serif
+    font-family: Arial, Helvatica, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 h1{
     color: rebeccapurple;
     text-align: center;
+    width: 100%;
+    display: block;
 }
 a{
     text-decoration: none; 
+    
 }
 a:hover{
     color:aliceblue;
+    width: 100%;
 }
 .assign{
     margin: 10px;
     padding: 10px;
     background-color: grey;
-    display: flex;
+    display: block;
     border-radius: 20px;
-     
+    width: 20%;
+    box-shadow: 8px 8px brown;
 
 }
 .assign img{
-    width: 400px;
+    width: 200px;
     margin: 10px;
     border: 2px solid darkred;
+}
+.assign img:hover{
+    width: 200px;
+    margin: 10px;
+    border: 2px dotted black;
 }
