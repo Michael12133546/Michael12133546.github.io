@@ -1,77 +1,206 @@
 <!DOCTYPE html>
-<html>
- <head>
- <title>CSCE 190: [Michael]</title>
- <link rel="stylesheet" href="styles.css" />
- <body>
-<h1>[Michael]</h1>
-<section class="assign">
-<img src="images/imagesproblem-statement.jpg.png" />
-<section class="assign-det">
-<h2>Problem statement: [Attendance Subscriptions]</h2>
-<p>
-[Students must pay for multiple subscription services in order to have their attendance counted in classes.]
-</p>
-</section>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traditional Sweet Treat | Moncks Corner, SC</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #333;
+    }
+    header {
+        background: #f58220;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    nav {
+        background: white;
+        border-bottom: 2px solid #f58220;
+        padding: 15px;
+        text-align: center;
+    }
+    nav a {
+        color: #f58220;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    section {
+        padding: 50px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .hero {
+        text-align: center;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    .card {
+        border: 2px solid #f58220;
+        border-radius: 10px;
+        padding: 20px;
+        background: #fffaf5;
+        text-align: center;
+    }
+    h2 {
+        color: #f58220;
+    }
+    form {
+        display: grid;
+        gap: 15px;
+    }
+    input, textarea, select {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    button {
+        background: #f58220;
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    button:hover {
+        opacity: 0.9;
+    }
+    footer {
+        background: #f58220;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Traditional Sweet Treat</h1>
+    <p>Homemade Cakes & Desserts in Moncks Corner, South Carolina</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#menu">Specialties</a>
+    <a href="#order">Order a Cake</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to Traditional Sweet Treat</h2>
+    <p>Creating delicious memories one cake at a time! We specialize in custom cakes for birthdays, weddings, baby showers, anniversaries, and every special occasion.</p>
 </section>
 
- <!-- Affinity diagram assignment -->
-<section class="assign">
-<img src="images/Screenshot 2023-09-20 132716.png" />
-<section class="assign-det">
-<a href="Files/Attendance Subscriptions (1).pdf"><h2>Affinity diagram: [Attendance Subscription]</h2></a>
-<p>
-[Multiple ideas and topics about an app that can solve attendance issues.]
-</p>
-</section>
-</section>
-<section class="assign">
-<img src="images/Screenshot 2023-10-17 212031.png" />
- <section class="assign-det">
- <a href="Files/AllPersona.pdf"><h2>Team Personas: [Personas for the Attendance App]</h2></a>
- <p>
- [Jonay Rivers and her quote is "Work harder not starter"]
- </p>
- </section>
- </section>
- <section class="assign">
- <img src="images/Screenshot 2023-10-25 145555.png" />
- <section class="assign-det">
- <a href="Files/AllStoryboards.pdf"><h2>Team Storyboards: [Storyboard for the Attendance App]</h2></a>
- <p>
- [Jonay Rivers using her storyboard for the first time.]
- </p>
- </section>
- </section> 
-   <!-- Sketching assignment -->
- <section class="assign">
-    <img src="images/Screenshot 2023-11-01 165205.png" />
-    <section class="assign-det">
-    <a href="Files/Sketches.pdf"><h2>Team Sketches: [Sketches for the Attendance app]</h2></a>
+<section id="about">
+    <h2>About Us</h2>
     <p>
-    [Representation of possible app designs and how it could be implemented]
+        Traditional Sweet Treat is a locally owned cake business proudly serving Moncks Corner and the surrounding Lowcountry area. Every dessert is made with love, quality ingredients, and a commitment to making your celebrations unforgettable.
     </p>
-    </section>
-    </section> 
-  <section class="assign">
- <img src="images/Screenshot 2023-11-27 201555.png" />
- <section class="assign-det">
- <a href="https://youtu.be/uLuuHM9kZUI?si=FdGvf1rah00TVzJZ"><h2>Team Paper Prototype: [Paper Prototype for the Attendance app]</h2></a>
- <p>
- [Representation of how the app would possibly work]
-</p>
 </section>
- </section> 
-  <!-- Hi-Fi prototype assignment -->
- <section class="assign">
-   <img src="images/Screenshot 2023-12-10 230223.png" />
-   <section class="assign-det">
-   <a href="https://youtu.be/axvepa9nVjs?si=OyiPv3TG1Glfp-2V"><h2>Team Hi-Fi Prototype: [Hi-Fi Prototype for the Attendance app]</h2></a>
-   <p>
-   [Representation of how the app would possibly work on a digital scale]
-   </p>
-   </section>
+
+<style>
+.cake-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+.cake-item {
+    min-width: 260px;
+    border-radius: 10px;
+    border: 2px solid #f58220;
+    background: #fffaf5;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.cake-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.cake-item h3 {
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+</style>
+
+<section id="menu">
+    <h2>Choose Your Sweet Treat</h2>
+    <p>Scroll through our cake collection to find your favorite!</p>
+
+    <div class="cake-scroll">
+        <div class="cake-item">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="Birthday Cake">
+            <h3>Birthday Cake</h3>
+        </div>
+
+        <div class="cake-item">
+            <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=800" alt="Wedding Cake">
+            <h3>Wedding Cake</h3>
+        </div>
+
+        <div class="cake-item">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800" alt="Cupcakes">
+            <h3>Cupcakes</h3>
+        </div>
+
+        <div class="cake-item">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800" alt="Baby Shower Cake">
+            <h3>Baby Shower Cake</h3>
+        </div>
+
+        <div class="cake-item">
+            <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=800" alt="Anniversary Cake">
+            <h3>Anniversary Cake</h3>
+        </div>
+
+        <div class="cake-item">
+            <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=800" alt="Cheesecake">
+            <h3>Cheesecake</h3>
+        </div>
+    </div>
 </section>
-</head>
+
+<section id="order">
+    <h2>Order Your Cake</h2>
+    <p>Complete the form below and we'll contact you to confirm your order.</p>
+
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <select name="cake_type" required>
+            <option value="">Select Cake Type</option>
+            <option>Birthday Cake</option>
+            <option>Wedding Cake</option>
+            <option>Cupcakes</option>
+            <option>Special Event Cake</option>
+        </select>
+
+        <input type="date" name="pickup_date" required>
+        <textarea name="details" rows="6" placeholder="Tell us about your order (theme, flavor, size, message on cake, etc.)"></textarea>
+
+        <button type="submit">Submit Order Request</button>
+    </form>
+</section>
+
+<footer>
+    <p>Traditional Sweet Treat | Moncks Corner, SC</p>
+    <p>Serving the Lowcountry with homemade sweetness.</p>
+</footer>
+
 </body>
 </html>
